@@ -1,0 +1,13 @@
+<aura:component>
+    <aura:attribute name="numComponentEvents" 
+                    type="Integer" 
+                    default="0"/>
+    
+    <aura:handler name="cmpEvent" 
+                  event="c:ceEvent" 
+                  action="{!c.handleComponentEvent}"/>
+    
+    <c:ceNotifier/>
+    
+    <p>{!v.numComponentEvents} component events fired.</p>
+</aura:component>

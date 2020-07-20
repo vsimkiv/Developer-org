@@ -1,0 +1,9 @@
+.THIS .slds-th__action{ 
+    justify-content: center !important; 
+    background-color: #16325c;
+	color: white;
+}
+.THIS .slds-grid_align-end {
+    justify-content: center !important;
+	color: #16325c;
+}

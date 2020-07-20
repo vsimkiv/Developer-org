@@ -1,0 +1,8 @@
+<apex:page standardController="Bus_Stop__c" extensions="BusStopControllerExtension" lightningStylesheets="true">
+    <apex:pageBlock title="Today:" id="schedule">
+    	<apex:pageBlockTable value="{! Schedule }" var="sch" columns="2">
+    		<apex:column value="{! sch.Time__c }"/>
+            <apex:column value="{! sch.Bus_Route__r.RouteNumber__c }"/>
+		</apex:pageBlockTable>
+    </apex:pageBlock>         
+</apex:page>

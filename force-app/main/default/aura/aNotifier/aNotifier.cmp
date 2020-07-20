@@ -1,0 +1,9 @@
+<aura:component >
+    <aura:registerEvent name="appEvent" 
+                        type="c:aEvent"/>
+
+    <lightning:badge label="Application Events Producer"/>
+    <lightning:button label="Fire an APPLICATION event"
+                      onclick="{!c.fireApplicationEvent}" />
+    
+</aura:component>

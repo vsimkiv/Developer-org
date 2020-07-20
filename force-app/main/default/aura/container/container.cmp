@@ -1,0 +1,4 @@
+<aura:component >
+    <c.applicationEventGenerator/>
+    <c.applicationEventListener/>
+</aura:component>

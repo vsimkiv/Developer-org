@@ -1,0 +1,12 @@
+<aura:component >
+    <aura:attribute name="messageFromComponentEvent"
+                    type="String"/>
+                    
+    <aura:handler name="componentEvent"
+                  event="c:componentEvent"
+                  action="{!c.handleComponentEvent}"/>
+    
+    <c.componentEventGenerator/>
+    
+    <p>{!v.messageFromComponentEvent}</p>
+</aura:component>

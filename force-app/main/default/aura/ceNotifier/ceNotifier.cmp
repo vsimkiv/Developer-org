@@ -1,0 +1,8 @@
+<aura:component>
+    <aura:registerEvent name="cmpEvent" 
+                        type="c:ceEvent"/>
+    
+    <lightning:badge label="COMPONENT Event Producer"/>
+    <lightning:button label="Fire a COMPONENT event"
+                      onclick="{!c.fireComponentEvent}" />
+</aura:component>

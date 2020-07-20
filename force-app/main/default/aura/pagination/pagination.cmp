@@ -1,0 +1,26 @@
+<aura:component >
+    <aura:attribute name="currentPageNumber" 
+                    type="Integer" 
+                    required="true" />
+    <aura:attribute name="maxPageNumber" 
+                    type="Integer" 
+                    required="true" />
+
+    <lightning:buttonGroup>
+        <lightning:button variant="brand-outline"
+                          label="First"
+                          onclick="{!c.firstPage}"/>
+        <lightning:button variant="brand-outline"
+                          label="Previous"
+                          onclick="{!c.prevPage}"/>
+        <lightning:button variant="brand">
+            {!v.currentPageNumber} / {!v.maxPageNumber}
+        </lightning:button>
+        <lightning:button variant="brand-outline"
+                          label="Next"
+                          onclick="{!c.nextPage}" />
+        <lightning:button variant="brand-outline"
+                          label="Last"
+                          onclick="{!c.lastPage}" />
+    </lightning:buttonGroup>
+</aura:component>

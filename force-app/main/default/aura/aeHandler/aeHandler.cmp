@@ -1,0 +1,10 @@
+<aura:component >
+    <aura:attribute name="numApplicationEvents" 
+                    type="Integer" 
+                    default="0"/>
+    
+    <aura:handler event="c:aEvent" 
+                  action="{!c.handleApplicationEvent}"/>
+    
+    <p>{!v.numApplicationEvents} application events fired.</p>
+</aura:component>
